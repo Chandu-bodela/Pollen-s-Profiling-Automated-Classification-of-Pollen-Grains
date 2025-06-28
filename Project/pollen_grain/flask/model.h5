@@ -12,7 +12,7 @@ import tensorflow as tf
 import cv2
 
 #give the path of your dataset file that you downloaded
-path =  'C:/Users/Akshay V/Downloads/archive1'
+path =  'C:/Users/User/Downloads/archive1'
 names = [name.replace(' ', '_').split('_')[0] for name in os.listdir(path)] #list of all first names from list of all files
 classes = Counter(names)  #returns dictionary with key as name, count as value
 
@@ -94,7 +94,7 @@ print("Images in each class in Test set: {}".format(np.sum(Y_test, axis =0)))
 #Model
 
 #give the path of the cnn.hdf5 model that you downloaded
-model=tf.keras.models.load_model("C:/Users/Akshay V/Downloads/cnn.hdf5")
+model=tf.keras.models.load_model("C:/Users/User/Downloads/cnn.hdf5")
 model.summary()
 score = model.evaluate(X_test, Y_test, verbose=0)
 print('Test set accuracy: {}'.format(score[1]))
