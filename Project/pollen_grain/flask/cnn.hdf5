@@ -1,0 +1,6 @@
+
+
+link to download the model:
+
+[drive link to the model](https://drive.google.com/drive/u/0/home)
+change the file path in line no. 97(eg: path ='C:/Users/User/Downloads/cnn.hdf5') don't forget to replace backward slash ('\')  with forward slash ('/')
